@@ -1,0 +1,38 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "strategy.json",
+  "title": "Strategy",
+  "description": "A Yearn strategy",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "authorName": {
+      "type": "string"
+    },
+    "authorUri": {
+      "type": "string",
+      "format": "uri"
+    },
+    "diagramUri": {
+      "type": "string",
+      "format": "uri"
+    },
+    "inputToken": {
+      "type": "string",
+      "format": "address"
+    }
+  },
+  "required": [
+    "name",
+    "description",
+    "authorName",
+    "authorUri",
+    "diagramUri",
+    "inputToken"
+  ]
+}
